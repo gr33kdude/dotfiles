@@ -42,3 +42,5 @@ shopt -s histappend
 
 # Keep multiline commands as one command in history
 shopt -s cmdhist
+
+source ~/.git-completion.sh
