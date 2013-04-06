@@ -1,3 +1,5 @@
+# runs on: interactive non-login shell
+
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -la'
@@ -26,11 +28,17 @@ PATH=${PATH}:~/bin
 #PATH=${PATH}:/afs/ece/class/ece447/bin
 export PATH
 
-alias emacs='vimtutor; echo > /dev/null '
+# because we're vim fanboys; forget the rest of the line
+alias emacs='vimtutor #'
 
 #aklog cs.cmu.edu
 # Cross authenticate on ECE machines
 #klog cakrivou@ECE.CMU.EDU
-
 # Google Go
 export GOPATH=~/712/video-cdn/go
+
+# When running two bash windows, allow both to write to the history, not one stomping the other
+shopt -s histappend
+
+# Keep multiline commands as one command in history
+shopt -s cmdhist
