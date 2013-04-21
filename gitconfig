@@ -1,0 +1,12 @@
+[user]
+	name = Costas Akrivoulis
+	email = costas@cmu.edu
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[color]
+	ui = true
+[alias]
+	co = checkout
+	st = status

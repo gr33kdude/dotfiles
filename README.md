@@ -7,3 +7,4 @@ Includes:
 * bash
 * vim
 * tmux
+* git
