@@ -24,7 +24,12 @@ endif
 :command! -nargs=1 -range Space2Tab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
 
 " Splits a line in half.  Opposite command to 'j' (join)
-nmap K i<Enter><Esc>
+nnoremap K i<Enter><Esc>
+
+" Faster buffer switching
+nnoremap <silent> gl :bn<Enter>
+nnoremap <silent> gb :bp<Enter>
+nnoremap <silent> gL :ls<Enter>
 
 " For file system tab completion
 set wildmode=longest,list,full
