@@ -12,13 +12,6 @@ alias la='ls -la'
 alias cls='clear; ls'
 alias lsd='ls -d */'
 
-# for 15-123
-alias gcckesden='gcc -Wall -Wextra -Werror -pedantic -ansi'
-
-# for 15-213
-alias 213='ssh -x -l cakrivou@ANDREW.CMU.EDU fish.ics.cs.cmu.edu'
-alias 213x='ssh -X -l cakrivou@ANDREW.CMU.EDU fish.ics.cs.cmu.edu'
-
 # git aliases
 alias gs='git status'
 
@@ -60,19 +53,11 @@ txtrst='\[\e[0m\]'    # Text Reset
 PS1="${bldgrn}\u@${bldylw}\h${txtrst}:${bldblu}\w${bldpur}\$(__git_ps1)${txtrst} $ "
 
 PATH=${PATH}:~/bin
-#PATH=${PATH}:/afs/cs.cmu.edu/academic/class/15410-f12/bin
-#PATH=${PATH}:/usr/contributed/bin
-#PATH=${PATH}:/afs/andrew/course/15/150/bin
-#PATH=${PATH}:~/bin/opt/bin
-#PATH=${PATH}:/afs/ece/class/ece447/bin
 export PATH
 
 # because we're vim fanboys; forget the rest of the line
 alias emacs='vimtutor #'
 
-#aklog cs.cmu.edu
-# Cross authenticate on ECE machines
-#klog cakrivou@ECE.CMU.EDU
 # Google Go
 export GOPATH=~/712/video-cdn/go
 
