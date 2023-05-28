@@ -1,6 +1,7 @@
-" 4 character spaces
-set ts=4
-set sw=4
+" 2 character spaces
+set ts=2
+set sts=2
+set sw=2
 set expandtab
 set autoindent
 
