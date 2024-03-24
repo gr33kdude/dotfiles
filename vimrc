@@ -28,9 +28,13 @@ endif
 nnoremap K i<Enter><Esc>
 
 " Faster buffer switching
-nnoremap <silent> gl :bn<Enter>
-nnoremap <silent> gb :bp<Enter>
-nnoremap <silent> gL :ls<Enter>
+nnoremap <silent> gl :ls<Enter>
+nnoremap <silent> gb :bn<Enter>
+nnoremap <silent> gB :bp<Enter>
+nnoremap <silent> <C-K> :bp<Enter>
+nnoremap <silent> <C-J> :bn<Enter>
+nnoremap <silent> <C-H> :bp<Enter>
+nnoremap <silent> <C-L> :bn<Enter>
 
 " For file system tab completion
 set wildmode=longest,list,full
